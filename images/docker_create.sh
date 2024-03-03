@@ -33,11 +33,11 @@ DOCKER_UP() {
 	docker rmi elmmb
 
     if [ ! -f "/elmmb/Dockerfile" ]; then
-        wget https://ghproxy.com/https://raw.githubusercontent.com/lu0b0/ELM/main/images/Dockerfile -O /elmmb/Dockerfile
+        wget https://raw.githubusercontent.com/lu0b0/ELM/main/images/Dockerfile -O /elmmb/Dockerfile
     fi
     
     
-    wget https://ghproxy.com/https://github.com/lu0b0/ELM/releases/download/2.7/elmmb -O /elmmb/elmmb
+    wget https://github.com/lu0b0/ELM/releases/download/2.7/elmmb -O /elmmb/elmmb
     
     chmod -R 777 /elmmb
 	
